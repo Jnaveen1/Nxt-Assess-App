@@ -1,0 +1,51 @@
+.result-con {
+  box-shadow: 0px 4px 16px 0px #7b879429;
+  text-align: center;
+  width: 60%;
+  height: fit-content;
+  padding: 20px;
+}
+
+.result-img {
+  width: 45%;
+  height: 45%;
+}
+
+.greets {
+  color: #334155;
+  font-size: 20px;
+  font-weight: 500;
+}
+.time-head {
+  color: #334155;
+  font-size: 18px;
+  font-weight: 500;
+}
+.time {
+  color: #164687;
+  font-size: 20px;
+  font-weight: 700;
+}
+.score {
+  color: #164687;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.marks {
+  color: #164687;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1;
+}
+.timeup {
+  font-size: 25px;
+  line-height: 1;
+  color: hsl(220, 5%, 25%);
+}
+.result-para {
+  font-weight: 500;
+  font-size: 15px;
+  color: #334155;
+}
