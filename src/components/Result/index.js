@@ -7,7 +7,7 @@ const Result = ({location: {state: {timeLeft, result, timeUp} = {}}}) => {
   const spentTime = 600 - timeLeft
   const minutes = Math.floor(spentTime / 60)
   const seconds = Math.floor(spentTime % 60)
-  const formattedTime = `00:0${minutes}:${
+  const formattedTime = `00:${minutes < 10 ? `0${minutes}` : minutes}:${
     seconds < 10 ? `0${seconds}` : seconds
   }`
   console.log(formattedTime)
@@ -29,14 +29,16 @@ const Result = ({location: {state: {timeLeft, result, timeUp} = {}}}) => {
             </p>
             <p className="score">Your score: {result}</p>
             <Link to="/assessment">
-              <button className="assessment-btn">Reattempt</button>
+              <button type="button" className="assessment-btn">
+                Reattempt
+              </button>
             </Link>
           </div>
         )}
         {timeUp && (
           <div className="result-con">
             <img
-              src="https://res.cloudinary.com/dmsebahwn/image/upload/v1727173947/Group_8032_ydyp5u.png"
+              src="https://res.cloudinary.com/dky69roxl/image/upload/v1705568376/calender_1_1_ebt1h1.png"
               className="result-img"
               alt="time up"
             />
@@ -46,7 +48,9 @@ const Result = ({location: {state: {timeLeft, result, timeUp} = {}}}) => {
             </p>
             <p className="score">Your score: {result}</p>
             <Link to="/assessment">
-              <button className="assessment-btn">Reattempt</button>
+              <button type="button" className="assessment-btn">
+                Reattempt
+              </button>
             </Link>
           </div>
         )}

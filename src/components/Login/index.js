@@ -39,7 +39,7 @@ class Login extends Component {
     if (response.ok) {
       console.log('success')
       this.renderSuccess(data.jwt_token)
-      this.setState({error_msg: false})
+      this.setState({errorMsg: false})
     } else {
       console.log('fail')
       this.setState({errorMsg: true})

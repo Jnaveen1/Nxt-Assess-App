@@ -25,7 +25,7 @@ const SingleSelectQuestion = props => {
       </select>
       <p>First option is selected by default</p>
       {questionNumber + 1 !== 10 ? (
-        <button onClick={onClickNextBtn} className="next-btn">
+        <button type="button" onClick={onClickNextBtn} className="next-btn">
           Next Question
         </button>
       ) : (

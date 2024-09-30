@@ -23,7 +23,6 @@ class Assessment extends Component {
     apiStatus: apiStatusConstants.initial,
     questions: [],
     questionNumber: 0,
-    timeFormat: '',
     userAnswers: [],
     total: 0,
   }
@@ -128,7 +127,11 @@ class Assessment extends Component {
       />
       <h1>Oops! Something Went Wrong</h1>
       <p>We are having some trouble</p>
-      <button className="retry-btn" onClick={this.renderAssessment}>
+      <button
+        type="button"
+        className="retry-btn"
+        onClick={this.renderAssessment}
+      >
         Retry
       </button>
     </div>
@@ -240,7 +243,6 @@ class Assessment extends Component {
   }
 
   render() {
-    const {questions, userAnswers} = this.state
     return (
       <div className="assessment-main-con">
         <Header />

@@ -10,7 +10,7 @@ const DefaultQuestion = props => {
   } = props
   console.log(optionIds)
 
-  const {id, questionText, option, optionsType} = question
+  const {id, questionText, option} = question
   const onClickNextBtn = () => {
     clickNext(id)
   }

@@ -3,7 +3,6 @@ import './index.css'
 const AssessmentDetails = props => {
   const {
     noOfQuestionSelected,
-    questionNumber,
     questions,
     displayQuestion,
     onSubmit,
@@ -17,15 +16,11 @@ const AssessmentDetails = props => {
     <>
       <div className="questions-attemp">
         <div className="ans-con">
-          <button className="answered-question">
-            <p>{noOfQuestionSelected}</p>
-          </button>
+          <p className="answered-question">{noOfQuestionSelected}</p>
           <p className="para">Answered Questions</p>
         </div>
         <div className="unans-con">
-          <button className="unanswered-question">
-            <p>{noOfQuestionNotAns}</p>
-          </button>
+          <p className="unanswered-question">{noOfQuestionNotAns}</p>
           <p className="para">Unanswered Questions</p>
         </div>
       </div>
@@ -33,11 +28,10 @@ const AssessmentDetails = props => {
       <h1 className="question-heading">Questions ({total})</h1>
       <ul className="unordered-question-numbers">
         {questions.map((item, index) => (
-          <li>
+          <li key={item.id}>
             <button
               type="button"
               className="btn-num"
-              key={item.id}
               onClick={() => displayQuestion(index)}
             >
               {index + 1}
@@ -46,7 +40,11 @@ const AssessmentDetails = props => {
         ))}
       </ul>
       <div className="submit-con">
-        <button className="submit-asses-btn" onClick={onClickSubmit}>
+        <button
+          type="submit"
+          className="submit-asses-btn"
+          onClick={onClickSubmit}
+        >
           Submit Assessment
         </button>
       </div>
