@@ -4,7 +4,6 @@
   top: 16px;
   left: 48px;
   gap: 0px;
-  opacity: 0px;
 }
 
 .header-con {
@@ -12,16 +11,15 @@
   width: 100%;
   height: 88px;
   gap: 0px;
-  opacity: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  position: fixed;
 }
 .logout-btn {
   height: fit-content;
-  opacity: 0px;
   background-color: transparent;
   color: #ffffff;
   border-color: #ffffff;

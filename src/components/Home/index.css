@@ -11,6 +11,41 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .home-main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-con {
+    flex-direction: column;
+    height: 85%;
+    margin-top: 15%;
+  }
+  .sub-con1 {
+    width: 80% !important; /* Adding !important if needed */
+    height: fit-content;
+    order: 2;
+  }
+
+  .sub-con2 {
+    width: 80% !important; /* Adding !important if needed */
+    height: 40vh;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 10px;
+  }
+  .header {
+    padding-bottom: 20px;
+    height: 15%;
+  }
+}
 .sub-con1 {
   width: 40%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);

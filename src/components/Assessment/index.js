@@ -245,7 +245,10 @@ class Assessment extends Component {
   render() {
     return (
       <div className="assessment-main-con">
-        <Header />
+        <>
+          <Header />
+        </>
+
         {this.renderApiStatus()}
       </div>
     )

@@ -29,7 +29,7 @@ const Result = ({location: {state: {timeLeft, result, timeUp} = {}}}) => {
             </p>
             <p className="score">Your score: {result}</p>
             <Link to="/assessment">
-              <button type="button" className="assessment-btn">
+              <button type="button" className="assessment-btn reattempt-btn">
                 Reattempt
               </button>
             </Link>
